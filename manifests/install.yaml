@@ -1,10 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ArgoCDExtension
-metadata:
+metadata: 
   name: isd-sample
-  finalizers:
+  finalizers: 
     - extensions-finalizer.argocd.argoproj.io
-spec:
-  sources:
-  - web:
+spec: 
+  sources: 
+  - web: 
       url: https://github.com/satyakiran-opsmx/isd-sample/releases/download/untagged-6365acc500b4f0cba337/extension.tar
