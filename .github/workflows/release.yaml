@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install UI dependencies
         run: yarn --cwd ui install
@@ -20,8 +20,9 @@ jobs:
       - name: Build UI asset
         run: yarn --cwd ui build
 
-      - name: Draft release
-        uses: softprops/action-gh-release@v1
+      - name: GH Release
+        uses: softprops/action-gh-release@v0.1.14
+
         with:
           tag_name: ${{ github.event.inputs.tag }}
           draft: true
