@@ -7,5 +7,5 @@ metadata:
 spec: 
   sources: 
   - web: 
-      url: https://github.com/satyakiran-opsmx/isd-sample/releases/download/untagged-6365acc500b4f0cba337/extension.tar
+      url: https://github.com/satyakiran-opsmx/isd-sample/releases/download/untagged-fbb66588715f68eb39a3/extension.tar
       
