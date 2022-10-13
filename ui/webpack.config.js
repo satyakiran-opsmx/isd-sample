@@ -1,6 +1,6 @@
 const path = require('path');
 
-const groupKind = 'argoproj.io/ISDSample';
+const groupKind = 'argoproj.io/Rollout';
 
 const config = {
   entry: {
