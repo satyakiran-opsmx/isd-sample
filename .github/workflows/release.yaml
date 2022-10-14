@@ -3,7 +3,7 @@ name: Release
 on:
   workflow_dispatch:
     inputs:
-      tag:
+      tags:
         description: "Git tag to build release from"
 
 jobs:
