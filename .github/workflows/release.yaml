@@ -3,7 +3,7 @@ name: Release
 on:
   workflow_dispatch:
     inputs:
-      tags:
+      tag:
         description: "Git tag to build release from"
 
 jobs:
@@ -24,6 +24,7 @@ jobs:
         uses: ncipollo/release-action@v1
 
         with:
+          tags: ${{ github.event.inputs.tag }}
           artifacts: "ui/dist/extension.tar"
           token: ${{ secrets.GITHUB_TOKEN }}
           
