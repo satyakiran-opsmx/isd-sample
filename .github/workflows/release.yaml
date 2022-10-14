@@ -24,9 +24,8 @@ jobs:
         uses: ncipollo/release-action@v1
 
         with:
-          tag_name: ${{ github.event.inputs.tag }}
-          draft: true
-          files: |
-            ui/dist/extension.tar
+          artifacts: "ui/dist/extension.tar"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
